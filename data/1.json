@@ -1,0 +1,16 @@
+{
+    "sites": [{
+        "id": 1,
+        "name": "main"
+    }, {
+        "id": 2,
+        "name": "foo"
+    }],
+    "fields": [{
+        "name": "a",
+        "sites": [1, 2]
+    }, {
+        "name": "b",
+        "sites": [1]
+    }]
+}
