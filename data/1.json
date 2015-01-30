@@ -1,16 +1,59 @@
 {
-    "sites": [{
-        "id": 1,
-        "name": "main"
+    "applicationName": "fake_name",
+    "package": "com.fakecompany.fakeproduct",
+    "analysis": "Anderson",
+    "numberOfRelations": 2,
+    "format": "0.1",    
+    "id": 2347,
+    "relations": [{
+        "id": 8773,
+        "type": "node",
+        "attributes": {
+            "type": "AllocationSiteInNode",
+            "class": "com.foo.MainActivity",
+            "method": "SomeFrameworkMethod"
+        }
     }, {
-        "id": 2,
-        "name": "foo"
-    }],
-    "fields": [{
-        "name": "a",
-        "sites": [1, 2]
+        "id": 8770,
+        "type": "node",
+        "attributes": {
+            "type": "AllocationSiteInNode",
+            "class": "com.foo.Vector",
+            "method": "OnCreate"
+        }
     }, {
-        "name": "b",
-        "sites": [1]
+        "id": 8790,
+        "type": "edge",
+        "attributes": {
+            "type": "ObjectPointsToEdge",
+            "source": {
+                "id": 8773
+            },
+            "sink": {
+                "id": 8770
+            },
+            "field": {
+                "type": "namedObject",
+                "name": "x"
+            }
+        }
+    }, {
+        "id": 8791,
+        "type": "fieldUsage",
+        "attributes": {
+            "type": "MethodArgument",
+            "field": {
+                "type": "namedObject",
+                "name": "x"
+            },
+            "node": {
+                "id": 8773
+            },
+            "method": {
+                "name": "vectorProduct",
+                "class": "com.foo.VectorUtils"
+            },
+            "argumentNumber": 2
+        }
     }]
 }
