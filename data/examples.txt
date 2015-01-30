@@ -1,0 +1,6 @@
+
+* is there an allocation site that is used as the second argument of 'foo'?
+* is tehre an allocation site of type Square that is used as the second argument of a method named 'foo' where the target object extends a class named util
+* is there an set tag invocation with two parameters such that the second parameter can point to the object calling set tag
+* is this allocation site called by the client or by the framework
+* is there an application commit that changes one of the above queries
